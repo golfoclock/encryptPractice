@@ -18,7 +18,7 @@ while choice != 0:
 		for i in range(0, len(message)):
 			result = result + chr(ord(message[i]) + 3)
 
-		print(result'\n\n')
+		print(result + '\n\n')
 		result = ''
 
 	elif choice != '0':
