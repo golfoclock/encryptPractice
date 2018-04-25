@@ -8,12 +8,18 @@ while choice != 0:
 	if choice == '1':
 		message = input("\nEnter message for encryption: ")
 		for i in range(0, len(message)):
-			result = result + chr(ord(message[i]) - 2)
+			result = result + chr(ord(message[i]) - 3)
 
 		print(result + '\n\n')
 		result = ''
 
 	elif choice == '2':
-		message = input("\nEnter a mesage for decryption: ")
+		message = input("\nEnter a message for decryption: ")
 		for i in range(0, len(message)):
-		result = result + chr(ord(message[i] + 2))	
+			result = result + chr(ord(message[i]) + 3)
+
+		print(result'\n\n')
+		result = ''
+
+	elif choice != '0':
+		print("Invalid input. Please try again. \n\n")	
